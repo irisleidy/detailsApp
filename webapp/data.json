@@ -1,0 +1,15 @@
+{
+  "items": [{
+    "name": "Marcelo",
+    "age": "25",
+    "city":"Madrid"    
+  }, {
+    "name": "Carmen",
+    "age": "26",
+    "city":"Barcelona"
+  }, {
+    "name": "María",
+    "age": "30",
+    "city": "Sevilla"
+  }]
+}

@@ -1,0 +1,64 @@
+{
+  "_version": "1.54.0",
+  "sap.app": {
+    "id": "myapp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "My app",
+    "description": "My app",
+    "applicationVersion": {
+    "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "myapp.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "myApp"
+    },
+    "dependencies": {
+      "minUI5Version": "1.114",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "myapp.view",
+				"controlId": "myApp",
+				"controlAggregation": "pages",
+				"transition": "slide",
+				"async": true
+			},
+      "routes": [{
+        "name": "details",
+				"pattern": "details/{key}",				
+				"target": "details"
+			}],
+			"targets": {
+				"details": {
+					"id": "details",
+					"viewName": "Details"
+				}
+			}
+    }    
+    
+  }
+}
