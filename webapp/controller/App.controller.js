@@ -25,7 +25,6 @@ sap.ui.define([
       
       onShowDetails: function() {        
         var oModel = this.getView().getModel();
-        console.log('MODEL', oModel)
         var sSelectedKey = oModel.getProperty("/selectedItem");    
         
         // Navegar a la vista de detalles solo si se ha seleccionado un nombre en el ComboBox

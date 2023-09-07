@@ -1,15 +1,17 @@
-<mvc:View 
-  controllerName="myapp.controller.Details"  
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
+<mvc:View
+  controllerName="myapp.controller.Details"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns="sap.m">
 
-  <Page title="Details">
-    <content>
-      <VBox alignItems="Center" justifyContent="Center">
-       <Label text="Nombre: {detail>/name}" />
-       <Label text="Edad: {detail>/age}" />
-       <Label text="Ciudad: {detail>/city}" />
-      </VBox>
-    </content>
-  </Page>
+  <Table id="myTable">
+    <columns>
+      <!-- Las columnas se agregan dinámicamente en el controlador -->
+    </columns>
+    <items>
+      <ColumnListItem>
+        <!-- Las celdas se agregan dinámicamente en el controlador -->
+      </ColumnListItem>
+    </items>
+  </Table>
 </mvc:View>
